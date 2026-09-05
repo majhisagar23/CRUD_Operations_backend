@@ -6,12 +6,13 @@ import com.chuiiin.crud.crud.service.EmployeeService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @AllArgsConstructor
-@RestController
+@RestController // = @Controller + @ResponseBody
 @RequestMapping("/api/employee")
 public class EmployeeController { // To handle Http Requests
 
